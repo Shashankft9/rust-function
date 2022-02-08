@@ -1,0 +1,28 @@
+version: 0.0.0
+name: rust-function
+namespace: ""
+runtime: rust
+registry: ""
+image: ""
+imageDigest: ""
+build: local
+git: {}
+builder: docker.io/shashankft/rust-builder:latest
+builders:
+  base: gcr.io/paketo-buildpacks/builder:base
+  default: docker.io/shashankft/rust-builder:latest
+  full: gcr.io/paketo-buildpacks/builder:full
+buildpacks:
+- docker.io/paketocommunity/rust
+volumes: []
+buildEnvs: []
+envs: []
+annotations: {}
+options: {}
+labels: []
+healthEndpoints:
+  liveness: /health/liveness
+  readiness: /health/readiness
+created: 2022-02-08T07:44:32.742090958-05:00
+invocation:
+  format: http
