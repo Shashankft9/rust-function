@@ -1,1 +1,1 @@
-web: /workspace/bin/function
+web: /workspace/source/bin/function

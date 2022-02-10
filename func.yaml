@@ -1,12 +1,14 @@
-version: 0.0.0
+version: 0.19.0
 name: rust-function
 namespace: ""
 runtime: rust
 registry: ""
-image: ""
+image: docker.io/shashankft/rust-function:latest
 imageDigest: ""
-build: local
-git: {}
+build: git
+git:
+  url: https://github.com/Shashankft9/rust-function.git
+  revision: master
 builder: docker.io/shashankft/rust-builder:latest
 builders:
   base: gcr.io/paketo-buildpacks/builder:base
