@@ -1,1 +1,1 @@
-web: check
+web: functioncheck
